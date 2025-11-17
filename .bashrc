@@ -118,4 +118,4 @@ fi
 
 # Custom statements
 
-alias "c=tr -d '\n' | xclip -selection clipboard" # for allowing pipe to clipboard
+alias "c=perl -pe 'chomp if eof' | xclip -selection clipboard" # for allowing pipe to clipboard
