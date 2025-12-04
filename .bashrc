@@ -116,6 +116,13 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Custom statements
+# CUSTOM STATEMENTS
+# 
+#
 
+# aliases
 alias "c=perl -pe 'chomp if eof' | xclip -selection clipboard" # for allowing pipe to clipboard
+
+# Github SSH Setup
+eval $(ssh-agent -s) > /dev/null
+ssh-add /home/$(whoami)/.ssh/github > /dev/null 2>&1
