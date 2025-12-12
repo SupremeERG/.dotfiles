@@ -122,6 +122,7 @@ fi
 
 # aliases
 alias "c=perl -pe 'chomp if eof' | xclip -selection clipboard" # for allowing pipe to clipboard
+alias "invert-screen=xcalib -invert -alter"
 
 # Github SSH Setup
 eval $(ssh-agent -s) > /dev/null
