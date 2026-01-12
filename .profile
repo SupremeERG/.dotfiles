@@ -26,6 +26,10 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# include Java installation
+# include Java binaries in PATH
 JAVA_INSTALL_PATH=/opt/jdk-25.0.1
 PATH="$JAVA_INSTALL_PATH/bin:$PATH"
+
+# include Maven binaries in PATH
+MAVEN_INSTALL_PATH=/opt/apache-maven-3.9.12
+PATH="$MAVEN_INSTALL_PATH/bin:$PATH"
