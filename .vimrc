@@ -9,6 +9,6 @@
 call plug#begin()
 
 " List plugins here
-Plug 'perservim/vim-markdown'
+Plug 'preservim/vim-markdown'
 
 call plug#end()
