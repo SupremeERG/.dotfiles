@@ -116,8 +116,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Custom statements
+# CUSTOM STATEMENTS
+# 
+#
 
-alias "c=perl -pe 'chomp if eof' | xclip -selection clipboard" # for allowing pipe to clipboard
+# aliases
+alias "c=perl -pe 'chomp if eof' | xclip -selection clipboard" # for allowing pipe to clipboard - usage: 'echo test | c'
 
-alias "gitstart=eval $(ssh-agent -s) && ssh-add /home/ethan/.ssh/github" # for allowing Github SSH access"
+
+alias "gitstart=eval $(ssh-agent -s) >/dev/null && ssh-add /home/ethan/.ssh/github" # for allowing Github SSH access"
+
+alias "invert-screen=xcalib -invert -alter"
