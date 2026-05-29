@@ -119,3 +119,5 @@ fi
 # Custom statements
 
 alias "c=perl -pe 'chomp if eof' | xclip -selection clipboard" # for allowing pipe to clipboard
+
+alias "gitstart=eval $(ssh-agent -s) && ssh-add /home/ethan/.ssh/github" # for allowing Github SSH access"
