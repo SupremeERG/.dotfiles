@@ -121,12 +121,13 @@ fi
 #
 
 # aliases
-alias "c=perl -pe 'chomp if eof' | xclip -selection clipboard" # for allowing pipe to clipboard
+alias "c=perl -pe 'chomp if eof' | xclip -selection clipboard" # for allowing pipe to clipboard - usage: 'echo test | c'
+
+alias "gitstart=eval $(ssh-agent -s) >/dev/null && ssh-add /home/ethan/.ssh/github" # for allowing Github SSH access"
+
 alias "invert-screen=xcalib -invert -alter"
 
-# Github SSH Setup
-eval $(ssh-agent -s) > /dev/null
-ssh-add /home/$(whoami)/.ssh/github > /dev/null 2>&1
+
 
 # PATH modifications
 
