@@ -28,8 +28,11 @@ fi
 
 # include Java binaries in PATH
 JAVA_INSTALL_PATH=/opt/jdk-25.0.1
-PATH="$JAVA_INSTALL_PATH/bin:$PATH"
+export PATH="$JAVA_INSTALL_PATH/bin:$PATH"
 
 # include Maven binaries in PATH
 MAVEN_INSTALL_PATH=/opt/apache-maven-3.9.12
-PATH="$MAVEN_INSTALL_PATH/bin:$PATH"
+export PATH="$MAVEN_INSTALL_PATH/bin:$PATH"
+
+# include golang binaries in PATH
+export PATH="/usr/local/go/bin:$PATH"

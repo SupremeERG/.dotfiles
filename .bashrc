@@ -127,3 +127,8 @@ alias "invert-screen=xcalib -invert -alter"
 # Github SSH Setup
 eval $(ssh-agent -s) > /dev/null
 ssh-add /home/$(whoami)/.ssh/github > /dev/null 2>&1
+
+# PATH modifications
+
+# load golang binaries that were installed via `go install`. These belong in .bashrc because these should be reloaded every time a new shell environment is started
+export PATH="$PATH:$(go env GOPATH)/bin"
